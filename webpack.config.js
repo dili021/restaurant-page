@@ -1,13 +1,20 @@
 const path = require('path');
-const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+
 module.exports = {
   entry: './index.js',
+
   output: {
-    filename: 'bundle.js',
-    path: path.join(__dirname, 'build'),
+    filename: '[name].bundle.js',
+    path: path.join(__dirname, 'dist'),
   },
   module: {
     rules: [
+      {
+        test: /\.s[ac]ss$/i,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
+      },
       {
         test: /\.m?js$/,
         exclude: /(node_modules|bower_components)/,
@@ -28,5 +35,11 @@ module.exports = {
       },
     ],
   },
-  plugins: [],
+  plugins: [
+    new CleanWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      title: 'Restaurant Page',
+      template: path.resolve(__dirname, 'index.html'),
+    }),
+  ],
 };
