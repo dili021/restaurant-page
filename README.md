@@ -5,7 +5,9 @@
 ![image](https://user-images.githubusercontent.com/55356496/91848813-54f8ec00-ec5b-11ea-870b-64106cdb1677.png)
 ![image](https://user-images.githubusercontent.com/55356496/91848848-617d4480-ec5b-11ea-8c7d-fc1b76cc58e3.png)
 
+## Live Demo
 
+- [Link](https://dili021.github.io/restaurant-page/)
 
 ## About
 
@@ -18,12 +20,13 @@
 
 ## Getting Started
 
-To get a local copy up and running follow these simple example steps.
+To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
 1. Have latest version of JS installed.
-2. Install the latest version of your browser of choice.
+2. Have Node and NPM installed.
+3. Install the latest version of your browser of choice.
 
 ### Setup
 
