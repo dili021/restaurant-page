@@ -1,5 +1,5 @@
-/* eslint-disable prefer-destructuring */
 /* eslint-disable linebreak-style */
+/* eslint-disable prefer-destructuring */
 const content = document.querySelector('.content');
 const title = document.createElement('h1');
 const textBox = document.createElement('div');
