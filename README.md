@@ -7,7 +7,7 @@
 
 ## Live Demo
 
-- [Link](https://rawcdn.githack.com/dili021/restaurant-page/2be8e2a1a386624e1e641587c12a32c23a06e91f/dist/index.html)
+- [Link](https://dili021.github.io/restaurant-page/)
 
 ## About
 
