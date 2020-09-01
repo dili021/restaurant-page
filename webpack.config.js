@@ -1,9 +1,8 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-  entry: './index.js',
+  entry: './src/index.js',
 
   output: {
     filename: '[name].bundle.js',
@@ -30,16 +29,16 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.jpeg$/,
-        use: ['url-loader '],
+        test: /\.jpe?g$/,
+        use: ['file-loader'],
       },
     ],
   },
   plugins: [
-    new CleanWebpackPlugin(),
+    // new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       title: 'Restaurant Page',
-      template: path.resolve(__dirname, 'index.html'),
+      template: path.resolve(__dirname, 'src/index.html'),
     }),
   ],
 };
