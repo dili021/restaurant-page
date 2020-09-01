@@ -1,3 +1,4 @@
+/* eslint-disable prefer-destructuring */
 /* eslint-disable linebreak-style */
 const content = document.querySelector('.content');
 const title = document.createElement('h1');
