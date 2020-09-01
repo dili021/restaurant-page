@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Gayathri:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap');
+
+::placeholder {
+  color: white;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Gayathri', sans-serif;
+  color: white;
+}
+
+h1 {
+  padding: 25px;
+  margin: 0;
+  text-align: center;
+  font-size: 7rem;
+  text-shadow: 0 0 6px black;
+}
+
+.content {
+  background-image: url('./assets/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  animation: changeBackground 42s infinite cubic-bezier(0.075, 0.82, 0.165, 1);
+  width: 100vw;
+  height: 100vh;
+}
+
+.text {
+  background: rgba(58, 26, 7, 0.623);
+  padding: 20px;
+  margin: 10px 20px;
+  border-radius: 10px;
+  width: 40%;
+  height: 60vh;
+  float: left;
+}
+
+p {
+  font-size: 1.3rem;
+  font-family: 'Raleway', sans-serif;
+}
+
+.tab-menu {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    position: relative;
+    cursor: pointer;
+  }
+
+  li::after {
+    width: 0;
+  }
+
+  li.active::after {
+    position: absolute;
+    left: -2px;
+    bottom: -1px;
+    content: '';
+    border-radius: 13px;
+    width: 110%;
+    height: 3px;
+    background: white;
+    transition: width 0.3s ease-in-out;
+  }
+}
+
+.menu-wrap {
+  h3 {
+    text-align: center;
+    font-size: 1.6rem;
+    text-decoration: underline;
+  }
+
+  ul {
+    font-size: 1.3rem;
+  }
+
+  li {
+    padding: 10px;
+  }
+}
+
+.text-holder {
+  height: 90%;
+  padding-top: 15px;
+
+  span {
+    display: block;
+    margin: 20px;
+  }
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.form-wrap {
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    input {
+      background: rgba(58, 26, 7, 0.836);
+      color: white;
+      margin-bottom: 10px;
+      padding: 15px;
+      border: none;
+      outline: none;
+    }
+
+    button {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+
+      &:hover {
+        background: rgb(194, 190, 190);
+      }
+    }
+  }
+}
+
+@keyframes changeBackground {
+  0% { background-image: url('./assets/pexels-dapurmelodi-1109197.jpg'); }
+  15% { background-image: url('./assets/bg.jpg'); }
+  30% { background-image: url('./assets/pexels-daria-shevtsova-1580466.jpg'); }
+  45% { background-image: url('./assets/pexels-dids-1478399.jpg'); }
+  60% { background-image: url('./assets/pexels-rauf-allahverdiyev-2801336.jpg'); }
+  75% { background-image: url('./assets/pexels-valeria-boltneva-1251208.jpg'); }
+  90% { background-image: url('./assets/pexels-vlad-bagacian-1061641.jpg'); }
+}
