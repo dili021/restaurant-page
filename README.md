@@ -18,12 +18,13 @@
 
 ## Getting Started
 
-To get a local copy up and running follow these simple example steps.
+To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
 1. Have latest version of JS installed.
-2. Install the latest version of your browser of choice.
+2. Have Node and NPM installed.
+3. Install the latest version of your browser of choice.
 
 ### Setup
 
